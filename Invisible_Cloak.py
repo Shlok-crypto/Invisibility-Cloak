@@ -3,6 +3,7 @@ import numpy as np
 
 capture = cv.VideoCapture(0)
 
+# initializing output Video (saving video)
 outVideo = cv.VideoWriter( 'invisible4.mp4', -1, 20.0, (640,480) )
 
 
@@ -62,9 +63,11 @@ while True:
 # Combining both of the frames
     final = cv.bitwise_or(frame_inv, cloakArea)
 
+# Saving a mp4 file 
     outVideo.write(final)
     cv.imshow("Invisible Cloak", final)
     #cv.imshow("dilation",maskInv)
+    
     if cv.waitKey(1) == ord('q'):
         break
 
