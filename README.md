@@ -1,6 +1,8 @@
 # Invisibility_Cloak
 For all the Harry Potter and SiFi fan!! Now you can finally go completely INVISABLEQ !! Utilizing the power of OpenCV and python 
 
+**Final Output Below :)**
+
 ***Input***
 * Initial frame
   * Background
